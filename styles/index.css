@@ -24,3 +24,84 @@ body {
   height: 100%;
   background-color: #fff;
 }
+
+.markdown {
+  padding: 1rem 0;
+  text-align: left;
+  text-rendering: optimizeSpeed;
+  font-size: 1rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  margin-top: 2rem;
+}
+
+.markdown p {
+  margin-bottom: 1.5rem;
+}
+
+.markdown ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.markdown ul li {
+  padding: 0.3rem 0;
+}
+
+.markdown a {
+  color: #007fa9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.markdown a img {
+  margin: 0 auto;
+}
+
+.markdown pre {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.markdown .table-wrapper-paragraph {
+  width: 100%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.markdown .table-wrapper-paragraph table {
+  margin: 0.8em auto 1.2em;
+  table-layout: fixed;
+}
+
+.markdown .table-wrapper-paragraph table th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #eef0f1;
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
+
+.markdown .table-wrapper-paragraph table td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .table-wrapper-paragraph table {
+    display: flex;
+  }
+
+  .table-wrapper-paragraph table tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
