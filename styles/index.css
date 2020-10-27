@@ -95,6 +95,14 @@ body {
   text-align: center;
 }
 
+.markdown .highlight {
+  overflow-x: auto;
+}
+
+.markdown .highlight__panel {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   .table-wrapper-paragraph table {
     display: flex;
