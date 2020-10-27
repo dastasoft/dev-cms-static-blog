@@ -2,6 +2,7 @@
 /* eslint-disable camelcase */
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import TopButton from '../../../components/TopButton';
 
@@ -34,14 +35,15 @@ export default function Post({ devDotToPost }) {
         <TopButton />
         <article className="text-xs w-full md:w-3/4 ">
           <div className="border-2 text-black bg-white md:rounded-lg overflow-hidden">
-            <img className="w-full" src={social_image} alt={title} />
+            <Image className="w-full" src={social_image} alt={title} unsized />
             <div className="p-4 md:p-32">
               <h1>{title}</h1>
               <div className="flex items-center text-gray-600">
-                <img
+                <Image
                   className="rounded-full w-12"
                   src={user.profile_image_90}
                   alt={user.name}
+                  unsized
                 />
                 <span className="mx-4">{user.name}</span>
                 <span className="text-sm">{formatedDate}</span>

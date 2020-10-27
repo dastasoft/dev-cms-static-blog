@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BlogPost({
   img,
@@ -18,10 +19,11 @@ export default function BlogPost({
   return (
     <Link as={`/blog/posts/${slug}`} href="/blog/posts/[slug]">
       <article className="h-full border-2 bg-white rounded-lg overflow-hidden flex flex-col cursor-pointer">
-        <img
+        <Image
           className="lg:h-48 md:h-36 w-full object-cover object-center"
           src={img}
           alt="blog"
+          unsized
         />
 
         <div className="p-6 flex-1">
