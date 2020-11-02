@@ -1,5 +1,7 @@
 # DEV.TO as CMS for STATIC BLOG with NEXTJS
 
+Full guide on [Nimbel](https://nimbel.net/blog/posts/simple-static-blog-with-next-js-and-dev-to-as-cms-4pej)
+
 ## Webhooks
 
 If you want to maintain your posts in dev.to and your blog sync, you'll need a webhook. You must create a new webhook to respond the events of `article_created` and/or `article_updated`.
